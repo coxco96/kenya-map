@@ -1,0 +1,149 @@
+body {
+    font-family: "loos-normal", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    
+}
+
+h1 {
+    color: #000000;
+    font-weight: 550;
+    font-size: 2rem;
+}
+
+h4,
+h5,
+span {
+    font-family: "loos-condensed", sans-serif;
+    font-weight: 700;
+}
+
+#map {
+    height: 75vh;
+    border-top: 2px solid orange;
+    background-color: rgb(220, 220, 220);
+}
+
+
+
+#footer {
+    height: 4vh;
+}
+
+#info {
+    z-index: 1000;
+    display: none;
+    width: 260px;
+    position: absolute;
+    /* top: 10px;
+    right: 10px; */
+}
+
+#sliderGrade {
+    z-index: 1000;
+    /* display: none; */
+    width: 176px;
+    padding: 16px;
+    position: relative;
+    font-family: "loos-condensed", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    border: 2px solid #812F33;
+}
+
+.boys {
+    background-color: #6e77b0;
+}
+
+.girls {
+    
+    background-color: #d96d02;
+    /* color: #d96d02; */
+}
+
+.leaflet-legend {
+    width: 240px;
+    /* height: 200px;
+    background-color: darkgray;
+    /* Legend is not shown on small screens. */
+    /* display: none; */
+
+}
+
+/* Rule to toggle on/off legend. */
+.show-legend {
+    display: none;
+    margin-bottom: 10px;
+}
+
+/* When screen is 768px and wider. */
+@media screen and (min-width: 768px) {
+    #map {
+        border-top: none;
+        height: 95vh;
+    }
+
+    .leaflet-legend {
+        display: block;
+    }
+
+    #legend button {
+        display: none;
+    }
+}
+
+.legend-large,
+.legend-small {
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+hr.small,
+hr.large {
+    width: 83px;
+    position: absolute;
+    top: -8px;
+    left: 55px;
+    border: 1px dashed #ccc;
+    margin-top: 8px;
+}
+
+
+.leaflet-container {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    font-weight: 300;
+}
+
+.girls,
+.boys {
+    color: #fff;
+    font-weight: 700;
+    padding: 0 4px 0 4px;
+}
+
+.trend {
+    color: black;
+    font-weight: 700;
+    padding: 0 4px 0 4px;
+}
+
+#slider {
+    border: 2px solid #812F33;
+}
+
+#legend {
+    border: 2px solid #812F33;
+}
+
+a {
+    color: #812F33;
+}
+
+a:hover {
+    color: #d96d02;
+    opacity: .5;
+}
